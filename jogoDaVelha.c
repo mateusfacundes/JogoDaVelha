@@ -15,17 +15,17 @@ int main()
 	char a9 = '9';
 	char b;
 
-	int i
+	int i;
 	int f = 1;
 
-	//repetição para qeu o jogo aconteça
+	//repetiÃ§Ã£o para qeu o jogo aconteÃ§a
 	for(i = 0; i < f; i++)
 	{
 		// turno do jogador o
 		if( i % 2 == 0)
 		{
 			//parte "grafica" e de entrada de dados
-			printf("jogador o escolha uma posição! \n");
+			printf("jogador o escolha uma posiÃ§Ã£o! \n");
 
 			printf("%c ", a1);
 			printf(" %c ", a2);
@@ -41,8 +41,8 @@ int main()
 			printf("\n");
 
 			scanf("%c%*c", &b);
-			
-			
+
+
 			//preenchimento do tabuleiro do o
 			if (b == a1)
 			{
@@ -86,7 +86,7 @@ int main()
 		else
 		{
 			//parte "grafica" e de entrada de dados
-			printf("jogador x escolha uma posição! \n");
+			printf("jogador x escolha uma posiÃ§Ã£o! \n");
 
 			printf("%c ", a1);
 			printf(" %c ", a2);
@@ -103,53 +103,50 @@ int main()
 
 			scanf("%c%*c", &b);
 
-			if(b < 10)
+
+			//preenchimento do tabuleiro do x
+			if (b == a1)
 			{
-				//preenchimento do tabuleiro do x
-				if (b == a1)
-				{
-					a1 = 'x';
-				}
-				if (b == a2)
-				{
-					a2 = 'x';
-				}
-				if (b == a3)
-				{
-					a3 = 'x';
-				}
-				if (b == a4)
-				{
-					a4 = 'x';
-				}
-				if (b == a5)
-				{
-					a5 = 'x';
-				}
-				if (b == a6)
-				{
-					a6 = 'x';
-				}
-				if (b == a7)
-				{
-					a7 = 'x';
-				}
-				if (b == a8)
-				{
-					a8 = 'x';
-				}
-				if (b == a9)
-				{
-					a9 = 'x';
-				}
-
-
+				a1 = 'x';
 			}
+			if (b == a2)
+			{
+				a2 = 'x';
+			}
+			if (b == a3)
+			{
+				a3 = 'x';
+			}
+			if (b == a4)
+			{
+				a4 = 'x';
+			}
+			if (b == a5)
+			{
+				a5 = 'x';
+			}
+			if (b == a6)
+			{
+				a6 = 'x';
+			}
+			if (b == a7)
+			{
+				a7 = 'x';
+			}
+			if (b == a8)
+			{
+				a8 = 'x';
+			}
+			if (b == a9)
+			{
+				a9 = 'x';
+			}
+			
 			system("cls");
 		}
 
 
-		//vereficação de vitoria do o
+		//vereficaÃ§Ã£o de vitoria do o
 		if(a1 == 'o' && a2 == 'o' && a3 == 'o')
 		{
 			printf("o jogador o ganhou!");
@@ -199,7 +196,7 @@ int main()
 		}
 
 
-		//vereficação de vitoria do x
+		//vereficaÃ§Ã£o de vitoria do x
 		if(a1 == 'x' && a2 == 'x' && a3 == 'x')
 		{
 			printf("o jogador x ganhou!");
